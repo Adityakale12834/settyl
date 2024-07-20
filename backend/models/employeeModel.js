@@ -3,28 +3,28 @@ import mongoose from "mongoose";
 const employeeSchema = new mongoose.Schema({
     employee_id :{
         type: String,
-        required: [true, "The employee id is required" ],
+        required: true ,
         unique: true,
     },
     employee_name: {
         type: String,
-        required: [true, "The Employee Name is Necessary" ],
+        required: true,
     },
     address: {
         type: String,
-        require: [true, "The address is neccessary" ],
+        require: true,
     },
     age:{
         type: Number,
-        required: [true, "The age is required" ],
+        required: true,
     },
     department: {
         type: String,
-        required: [true, "The department is required field"],
+        required: true,
     },
-    emplyee_status: {
+    employee_status: {
         type: String,
-        required: [true, "The Employee Name is necessary" ],
+        required: true,
     }
 });
 
